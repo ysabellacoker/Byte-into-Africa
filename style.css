@@ -1,0 +1,218 @@
+
+
+
+
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #902106;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #ff6f00;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 4px solid #f59e0b;
+  transition: all 0.3s ease;
+}
+
+header:hover {
+  background-color: #f59e0b;
+  transform: scale(1.02);
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #ffcc80;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ffe0b2;
+  transform: scale(1.05);
+}
+
+/* Main Section Styling */
+.section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.placeholder {
+  background-color: #fff3e0;
+  border: 2px dashed #ffa726;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  font-style: italic;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #ff6f00;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  border-top: 4px solid #f59e0b;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== Nigeria Intro Section (Updated) ====== */
+.country-header {
+  background: linear-gradient(135deg, #fffbea, #f8ecbc);
+  padding: 3rem 2rem;
+  text-align: center;
+  border-bottom: 6px solid #f59e0b;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  max-width: 1000px;     /* NEW: limit header width */
+  margin: 0 auto 3rem;   /* NEW: center it + add bottom space */
+}
+
+
+
+
+.country-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 10px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #f59e0b,
+    #f59e0b 10px,
+    #fffbea 10px,
+    #fffbea 20px
+  );
+}
+
+/* Main Header Styling */
+.country-header h1 {
+  font-size: 4rem;
+  color: #d97706;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.country-header h1:hover {
+  color: #f59e0b;
+  transform: scale(1.05);
+}
+
+/* Subheading Styling */
+.country-header p {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #4b5563;
+  font-family: 'Lora', serif;
+  line-height: 1.6;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== Banner Styles ====== */
+
+/* Appetizer Banner */
+.banner.appetizer-banner {
+  background: linear-gradient(to right, #471645, #b450b8);
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  border-bottom: 5px solid #471645;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Dish Banner */
+.banner.main-banner {
+  background: linear-gradient(to right, #da121a, #fcd116);
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  border-bottom: 5px solid #b60f15;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dessert Banner */
+.banner.dessert-banner {
+  background: linear-gradient(to right, #264653, #2a9d8f);
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  border-bottom: 5px solid #192e36;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  font-style: italic;
+  opacity: 0.95;
+}
+
+/* Recipe Styling */
+.recipe {
+  background-color: #fff5eb;
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.recipe h3 {
+  color: #c2410c;
+  margin-bottom: 0.5rem;
+}
+
+.recipe ul,
+.recipe ol {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.note {
+  background-color: #ffe8d6;
+  padding: 1rem;
+  border-left: 5px solid #f97316;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+

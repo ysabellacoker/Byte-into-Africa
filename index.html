@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Byte into Africa</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Lora:ital,wght@1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== HOMEPAGE STYLES ===== */
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #902106;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Hero Header */
+    .hero-header {
+      background: linear-gradient(135deg, #ff6f00, #ffcc80);
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem;
+      position: relative;
+      border-bottom: 8px solid #f59e0b;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-text h1 {
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .tagline {
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #fffbea;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: white;
+      color: #ff6f00;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, background-color 0.3s;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      background-color: #ffe0b2;
+      transform: scale(1.05);
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #ffcc80;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      padding: 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #ffe0b2;
+      transform: scale(1.05);
+    }
+
+    /* Homepage Card Sections */
+    .homepage-wrapper {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .card {
+      background-color: #fff3e0;
+      padding: 2rem;
+      border-left: 6px solid #f59e0b;
+      border-radius: 15px;
+      margin: 2rem 0;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      color: #c2410c;
+      margin-bottom: 1rem;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .icon-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .icon-list li {
+      padding-left: 1.5rem;
+      position: relative;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .icon-list li::before {
+      content: '🍽️';
+      position: absolute;
+      left: 0;
+    }
+
+    /* Final Message */
+    .final-blurb {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #5c1e00;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #ff6f00;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 2rem;
+      border-top: 4px solid #f59e0b;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero-header">
+    <div class="hero-text">
+      <h1>Byte into Africa</h1>
+      <p class="tagline">Serving up culture, connection, and cuisine.</p>
+      <a href="country1.html" class="cta-button">Start Exploring Recipes 🍴</a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="country1.html">Nigeria</a>
+    <a href="country2.html">Ethiopia</a>
+    <a href="country3.html">Ghana</a>
+    <a href="country4.html">Jamaica</a>
+    <a href="interview.html">Learn from Experts</a>
+    <a href="about.html">About the Coder</a>
+  </nav>
+
+  <main class="section homepage-wrapper">
+    <section class="card definition-card">
+      <h2>🌍 What is Byte into Africa?</h2>
+      <p><strong>Byte into Africa</strong> is an online cookbook that celebrates Africa’s culinary heritage. It’s designed to be a welcoming space for African students living abroad and for anyone curious about authentic African recipes and stories.</p>
+    </section>
+
+    <section class="card mission-card">
+      <h2>🎯 My Mission</h2>
+      <p>My goal is to combine my coding and cooking skills to build a resource that empowers African students to reconnect with their roots through food. This cookbook makes it easy to recreate traditional dishes from home, no matter where you are in the world.</p>
+    </section>
+
+    <section class="card features-card">
+      <h2>🔥 What You'll Find Inside</h2>
+      <ul class="icon-list">
+        <li>🇳🇬 Flavor-packed dishes from Nigeria, Ghana, Ethiopia & Jamaica</li>
+        <li>📖 Cultural backstories with historical roots</li>
+        <li>🎤 Interviews with African restaurant owners in the U.S.</li>
+        <li>🎨 A bold, country-themed design with flag-inspired gradients</li>
+        <li>🍲 Easy-to-follow recipes tailored for students</li>
+      </ul>
+    </section>
+
+    <section class="card closing-card">
+      <p class="final-blurb">Whether you're far from home or just beginning to explore African flavors—<strong>this is your place</strong>. Welcome home, and happy cooking! 🌺</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Byte into Africa. Built with love and spice by Ysa ❤️</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
